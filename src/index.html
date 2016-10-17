@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>An Introduction to Python Concurrency</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<table width=800>
+<tr><td>
+
+<h1>An Introduction to Python Concurrency</h1>
+
+<p>
+<b>Copyright (C) 2009, All Rights Reserved</b><br>
+<b>David Beazley</b><br>
+<b><a href="http://www.dabeaz.com">http://www.dabeaz.com</a></b><br>
+</p>
+
+<p>
+Presented at USENIX Technical Conference, June 15, 2009
+</p>
+
+<h2>Introduction</h2>
+
+<p>
+This tutorial is an overview of concurrent programming idioms in Python.
+
+</p>
+
+<ul>
+<li><a href="Concurrent.pdf">Presentation Slides</a> (PDF)
+</ul>
+
+<h2>Requirements and Support Data Files</h2>
+
+<p>
+This tutorial requires the use of Python 2.6 or newer.  No third party
+modules are required.  Examples have been tested on both Unix and Windows XP.
+</p>
+
+<P>
+The following file contains some supporting data files that are used
+by the various code samples.  Download this to your machine to work with
+the examples that appear in the tutorial.
+</P>
+
+<ul>
+<li><a href="concurrency.zip">concurrency.zip</a>
+</ul>
+
+<p>
+This download also includes a PDF of the lecture slides.
+</p>
+
+<h2>Code Samples</h2>
+
+<p>
+Here are various code samples from the course.  You can either cut and
+paste these from the browser or simply work with them directly in the
+"Concurrency" directory. The order in which files are listed follow the
+course material. 
+</p>
+
+<p>
+<b>Part 3 : Python Thread Programming</b>
+
+<ul>
+<li><a href="countdown.py">countdown.py</a>.  A very simple thread (a first example).
+
+<P>
+<li><a href="countdown2.py">countdown2.py</a>.  Launching a function in a thread.
+
+<P>
+<li><a href="race.py">race.py</a>.  Example of a race condition.  Run multiple times to see different results.
+
+</ul>
+
+<p>
+<b>Part 4 : Thread Synchronization Primitives</b>
+
+<ul>
+<li><a href="lock_ex.py">lock_ex.py</a>.  An example of using a lock
+to synchronize access to shared data.
+
+<P>
+<li><a href="lock_with.py">lock_with.py</a>.  An example of using
+a lock with the Python 2.6 context-manager feature.
+
+<p>
+<li><a href="rlock_ex.py">rlock_ex.py</a>. An example of code-based locking using
+a reentrant lock.
+
+<p>
+<li><a href="sema_signal.py">sema_signal.py</a>. An example of using a
+semaphore for signaling between threads.
+
+<p>
+<li><a href="event_barrier.py">event_barrier.py</a>. Using an
+event to implement a synchronization barrier.
+
+<p>
+<li><a href="event_notify.py">event_notify.py</a>. Using an
+event and semaphore to implement a kind of notification mechanism.
+
+<p>
+<li><a href="cond.py">cond.py</a>. An example of setting up
+a producer-consumer problem with a condition variable.
+
+</ul>
+
+<p>
+<b>Part 5 : Threads and Queues</b>
+
+<ul>
+<li><a href="pc_queue.py">pc_queue.py</a>. A producer-consumer problem
+using threads and queues.
+</ul>
+
+<p>
+<b>Part 6 : The Problem with Threads</b>
+
+<ul>
+<li><a href="perf.py">perf.py</a>. A program that illustrates some
+performance problems with threads.
+</ul>
+
+<p>
+<b>Part 9 : Processes and Messages</b>
+
+<ul>
+<li><a href="channel.py">channel.py</a>. An example of setting up a
+message channel between processes using the subprocess module. 
+</ul>
+
+<p>
+<b>Part 10 : Multiprocessing</b>
+
+<ul>
+<li><a href="countdownp.py">countdownp.py</a>. A very example of 
+launching a process.
+
+<p>
+<li><a href="perfmp.py">perfmp.py</a>.  A simple performance test of
+CPU-bound processes.  Compare to the thread example earlier.
+
+<p>
+<li><a href="pipemp.py">pipemp.py</a>.  An example of a multiprocessing
+producer/consumer with a pipe.
+
+<p>
+<li><a href="queuemp.py">queuemp.py</a>.  Using multiprocessing queues.
+
+<p>
+<li><a href="poolmp.py">poolmp.py</a>.  An example of using a multiprocessing
+pool.
+</ul>
+
+<p>
+<b>Part 11 : Alternatives to Threads and Processes</b>
+
+<ul>
+<li><a href="generator.py">generator.py</a>. A very simple example of
+using generators to implement a form of cooperative multitasking.
+</ul>
+
+
+</td>
+</tr>
+</table>
+</body>
+</html>
+
